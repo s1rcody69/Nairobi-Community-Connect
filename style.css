@@ -1,0 +1,45 @@
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav-link {
+    color: #1F2937;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F77F00;
+}
+
+/* ================= HERO ================= */
+/* 
+ .hero-section {
+     background: linear-gradient( #2e7d32b0, #219dbc94), url("images/image1.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-clip: border-box;
+    
+}  */
+
+.cta-button {
+    background-color: #F77F00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d96c00;
+    transform: translateY(-3px);
+}
