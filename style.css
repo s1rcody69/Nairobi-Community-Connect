@@ -42,4 +42,55 @@ h1, h2, h3 {
 .cta-button:hover {
     background-color: #d96c00;
     transform: translateY(-3px);
+
+}
+
+/* Web Responsiveness */
+
+/* Medium screens */
+@media (max-width: 1024px) {
+    grid-cols-3{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    grid-cols-2{
+        grid-template-columns: 1fr, !important;
+    }
+    header nav ul{
+        gap: 1rem;
+    }
+    .hero-section{
+        font-size: 2.5rem;
+    }
+   
+}
+
+/* Small Screens */
+
+@media (mas-width: 720px){
+    .grid-cols-3, .grid-cols-2{
+        grid-template-columns: 1fr, !important;
+    }
+    header .max-w-6xl{
+        flex-direction: column;
+        align-items: flex-start ;
+
+    }
+  header nav ul{
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .hero-section{
+    padding: 4rem 1rem;
+  }
+  .hero-section h2{
+    font-size: 2rem;
+  }
+  footer .grid{
+    grid-template-columns: 1fr, !important;
+    text-align: center;
+
+  }
+
 }
