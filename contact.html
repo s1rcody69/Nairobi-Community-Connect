@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nairobi Community Connect</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwinds cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background:
+          linear-gradient(135deg, #2e7d3290, #219dbc84), url(images/image6.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-[#FFF8E7] text-gray-900">
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-2xl font-bold text-green-700">
+          Nairobi Community Connect
+        </h1>
+        <nav>
+          <ul class="flex space-x-6 font-small">
+            <li><a href="homepage.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="help.html" class="nav-link">Find Help</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="events.html" class="nav-link">Events</a></li>
+            <li><a href="stories.html" class="nav-link">Stories</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="text-center py-16 px-6">
+      <h2 class="text-4xl font-bold mb-4">Get in Touch with us.</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        Have a question, suggestion, or partnership idea? We'd love to hear from
+        you.
+      </p>
+    </section>
+
+    <!-- contact section -->
+     <section class="max-w-6xl mx-auto px-6 pb-20 mt-10 ">
+      <div class=" grid grid-cols-2 gap-12">
+
+        <div class=" bg-white/30 backdrop-opacity-20 p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-6 text-green-700">Contact Information</h3>
+            <p class="mb-4"><strong>Location:</strong> Nairobi, Kenya</p>
+                <p class="mb-4"><strong>Email:</strong> info@ncc.org</p>
+                <p class="mb-4"><strong>Phone:</strong> +254 700 000 000</p>
+
+          <div class="mt-8">
+                    <h4 class="font-semibold mb-2">Office Hours</h4>
+                    <p>Monday - Friday: 8:00 AM – 5:00 PM</p>
+                    <p>Saturday: 9:00 AM – 1:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+           </div>
+           <!-- contact form -->
+            <div class=" bg-white/30 backdrop-opacity-20 p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold mb-6 text-green-700"> Send a Message.</h3>
+
+              <form action="">
+
+                <div class="mb-5">
+                        <label class="block mb-2 font-medium"> Full Name</label>
+                        <input type="text" placeholder="Enter Full Name"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+                </div>
+
+                <div class="mb-5">
+                        <label class="block mb-2 font-medium">Email Address</label>
+                        <input type="email" placeholder="Your email"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+                    </div>
+
+                 <div class="mb-5">
+                        <label class="block mb-2 font-medium"> Message Subject</label>
+                        <input type="email" placeholder="Your Subject"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+                  </div>
+
+                 <div class="mb-5">
+                        <label class="block mb-2 font-medium">Messaage</label>
+                         <textarea rows="4" placeholder="How can we help?" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+
+                        </textarea>
+
+                  <button type="submit" class="cta-button w-full">
+                        Send Message
+                    </button>
+                            
+
+
+              </form>
+            </div>
+
+        </div>
+
+
+      </div>
+     </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-green-700 text-white py-8 mt-20">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-semibold mb-3">About</h3>
+          <p>
+            Supporting Local Communities in Nairobi through connection and
+            collaboration
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-3">Links</h3>
+          <ul class="space-y-2">
+            <li><a href="help.html">Find Help</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-3">Our Location</h3>
+          <p>Nairobi, Kenya</p>
+          <p>Email: info@ncc.org</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 text-sm">
+        <p>© 2026 Nairobi Community Connect. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
