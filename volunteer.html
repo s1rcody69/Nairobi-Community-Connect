@@ -13,13 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css file -->
     <link rel="stylesheet" href="style.css" />
-    <style>
-       body{
-        background: linear-gradient(135deg, #2e7d3290, #219dbc84), url(images/image4.jpg);
-            background-position: center;
-            background-size: cover;
-       }
-    </style>
+    
   </head>
   <body class="bg-[#FFF8E7] text-gray-900">
     <!-- NAVBAR -->
@@ -35,7 +29,7 @@
             <li><a href="homepage.html" class="nav-link">Home</a></li>
             <li><a href="about.html" class="nav-link">About Us</a></li>
             <li><a href="help.html" class="nav-link">Find Help</a></li>
-            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="volunteer.html" class="nav-link active">Volunteer</a></li>
             <li><a href="events.html" class="nav-link">Events</a></li>
             <li><a href="stories.html" class="nav-link">Stories</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -45,20 +39,20 @@
     </header>
 
     <section class="text-center py-10 px-6">
-        <h2 class="text-4xl font-bold mb-4">Become a Volunteer</h2>
+        <h2 class="text-4xl font-bold mb-4">Become a <span>Volunteer</span></h2>
         <p class="text-lg max-w-2xl mx-auto">
             Join our growing network of Nairobi volunteers making a real difference in local communities.
         </p>
     </section>
 
     <!-- VOLUNTEER FORM -->
-    <section class= "max-w-xl mx-auto mt-10 bg-white/30 backdrop-opacity-20  p-10 rounded-lg shadow-md mb-20">
-        <form class="grid grid-cols-2 gap-4">
+    <section class= "max-w-xl mx-auto mt-10 shadow-lg mb-20">
+        <form class="grid md:grid-cols-2 gap-4">
             <!-- name input -->
             <div class="mb-6">
              <label for="full-name" class="block mb-2 font-medium">Full Name</label>
              <input type="text" placeholder="Enter Your Full Name"
-              class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+              class="w-full border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
             </div>
             <!-- email input -->
               <div class="mb-6">
@@ -80,6 +74,8 @@
                 <option>Community Clean Up</option>
                 <option>Education and Tutoring</option>
                 <option>Event Support</option>
+                <option>Religious Support</option>
+                <option>Job and skills Support</option>
 
              </select>
             </div>
@@ -92,12 +88,16 @@
 
              </div>
              <!-- submit button -->
-              <button type="submit" class=" cta-button ">
+              <button type="submit"  class="cta-button ">
                Submit Application
               </button>
             
+              
 
         </form>
+
+        
+            
     </section>
 
     <!-- FOOTER -->
