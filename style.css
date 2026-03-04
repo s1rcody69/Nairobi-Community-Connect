@@ -90,49 +90,92 @@ footer {
 
 /* Web Responsiveness */
 
-/* Medium screens */
-@media (max-width: 1024px) {
-  .grid.grid-cols-3 {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-  .grid.grid-cols-2 {
-    grid-template-columns: 1fr !important;
-  }
-  header nav ul {
-    gap: 1rem;
-  }
-  .hero-section {
-    font-size: 2.5rem;
-  }
-}
 
-/* Small Screens */
 
-@media (max-width: 725px) {
-  .grid.grid-cols-3,
-  .grid.grid-cols-2 {
-    grid-template-columns: 1fr !important;
-  }
+@media (min-width: 480px) and (max-width: 768px) {
+  /* Navigation */
   header .max-w-6xl {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   header nav ul {
     flex-direction: row;
     gap: 0.8rem;
-    margin-top: 1rem;
+    flex-wrap: wrap;
   }
 
-  .hero-section {
-    padding: 4rem 1rem;
+  header nav ul li a {
+    font-size: 0.9rem;
   }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 3rem 1.5rem;
+  }
+
   .hero-section h2 {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
   footer .grid {
-    /* grid-template-columns: 1fr !important; */
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
     text-align: center;
   }
 
-  
+  /* Forms */
+  .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid.grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Medium Screens (Tablets - 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Navigation */
+  header nav ul {
+    gap: 1rem;
+  }
+
+  header nav ul li a {
+    font-size: 0.95rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 3.5rem 2rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  /* Footer */
+  footer .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem;
+  }
+
+  /* Forms */
+  .grid.grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
 }
